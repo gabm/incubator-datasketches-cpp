@@ -29,15 +29,15 @@ install(TARGETS theta
 install(FILES ${theta_HEADERS}
   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/DataSketches")
 
-target_sources(theta
-  INTERFACE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_sketch.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_union.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_intersection.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_a_not_b.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/binomial_bounds.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_sketch_impl.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_union_impl.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_intersection_impl.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_a_not_b_impl.hpp
-)
+#target_sources(theta
+#  INTERFACE
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_sketch.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_union.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_intersection.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_a_not_b.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/binomial_bounds.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_sketch_impl.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_union_impl.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_intersection_impl.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/theta_a_not_b_impl.hpp
+#)

@@ -74,12 +74,22 @@ set_target_properties(datasketches PROPERTIES
 )
 
 # # Installation
-install(TARGETS datasketches
-  EXPORT ${PROJCT_NAME}
-  DESTINATION ${CMAKE_INSTALL_LIBDIR}
-  PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/DataSketches
-  INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/DataSketches
+#install(TARGETS datasketches
+#  EXPORT ${PROJCT_NAME}
+#  DESTINATION ${CMAKE_INSTALL_LIBDIR}
+#  PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/DataSketches
+#  INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/DataSketches
+#)
+
+find_package(ld-cmake-tools REQUIRED)
+cmake_make_installation(
+        TARGETS datasketches common cpc hll kll fi theta
+        NAMESPACE DataSketches
+        CMAKE_IN cmake/Config.cmake.in
+        HEADER_PATHS ${CMAKE_SOURCE_DIR}/include/
+        HEADER_PATTERNS *.*
 )
+
 
 #set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 #set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

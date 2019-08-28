@@ -6,13 +6,14 @@ endif()
 
 target_include_directories(common
   INTERFACE
-    include
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
 
-target_sources(common
-  INTERFACE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/MurmurHash3.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/serde.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/CommonUtil.hpp
-)
+
+#target_sources(common
+#  INTERFACE
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/MurmurHash3.h
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/serde.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/CommonUtil.hpp
+#)
 

@@ -26,9 +26,9 @@ install(TARGETS kll
 install(FILES ${kll_HEADERS}
   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/DataSketches")
 
-target_sources(kll
-  INTERFACE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/kll_helper.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/kll_sketch.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/kll_quantile_calculator.hpp
-)
+#target_sources(kll
+#  INTERFACE
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/kll_helper.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/kll_sketch.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/kll_quantile_calculator.hpp
+#)

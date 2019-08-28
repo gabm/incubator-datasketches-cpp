@@ -26,8 +26,8 @@ install(TARGETS fi
 install(FILES ${fi_HEADERS}
   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/DataSketches")
 
-target_sources(fi
-  INTERFACE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/frequent_items_sketch.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/reverse_purge_hash_map.hpp
-)
+#target_sources(fi
+#  INTERFACE
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/frequent_items_sketch.hpp
+#    ${CMAKE_CURRENT_SOURCE_DIR}/include/reverse_purge_hash_map.hpp
+#)
